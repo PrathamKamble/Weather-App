@@ -97,11 +97,11 @@ body {
 }
 
 .map {
-    height: 68%;
+    height: 70%;
 }
 
 .container-bottom {
-    height: 30%;
+    height: fit-content;
     padding: 30px;
 }
 
