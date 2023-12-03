@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="main">
+        <section id="landing-page">
+            <div class="box">
+                <h1>Weather API</h1>
+                <button id="fetchBtn">Fetch Data</button>
+            </div>
+        </section>
+
+        <section id="data-page" style="display: none;">
+            <div class="container-top">
+                <h2>Welcome To The Weather App</h2>
+                <p class="para">Here is your current location</p>
+
+                <div class="location">
+                    <div class="lat">
+                        Lat : 1298838
+                    </div>
+
+                    <div class="long">
+                        Long : 2383273278
+                    </div>
+                </div>
+
+                <div class="map">
+                    <iframe src="https://maps.google.com/maps?q=19.1086776, 73.005094&z=15&output=embed" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                </div>
+            </div>
+
+            <div class="container-bottom">
+                <h2>Your Weather Data</h2>
+                <div class="data">
+                    <div class="loc data-box">
+                        <p>Location : New Delhi</p>
+                    </div>
+
+                    <div class="windSpeed data-box">
+                        <p>Wind Speed :  100kmph</p>
+                    </div>
+
+                    <div class="humidity data-box">
+                        <p>Humidity : 10</p>
+                    </div>
+
+                    <div class="timeZone data-box">
+                        <p>Time Zone : GMT +5:30</p>
+                    </div>
+
+                    <div class="Pressure data-box">
+                        <p>Pressure : 10atm</p>
+                    </div>
+
+                    <div class="windDirc data-box">
+                        <p>Wind Direction : North West</p>
+                    </div>
+
+                    <div class="uvIdx data-box">
+                        <p>UV Index : 500</p>
+                    </div>
+
+                    <div class="Temp data-box">
+                        <p>Feels like : 30°</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
