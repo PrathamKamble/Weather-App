@@ -1,6 +1,7 @@
 const latitude = document.querySelector('.lat');
 const longitude = document.querySelector('.long');
 
+const gmap = document.querySelector('.gmap');
 const locationName = document.querySelector('.loc');
 const windSpeed = document.querySelector('.windSpeed');
 const humidity = document.querySelector('.humidity');
@@ -32,6 +33,8 @@ async function checkWeather(lat, long) {
     
     let data = await response.json();
     console.log(data);
+
+    gmap.src = `https://maps.google.com/maps?q=${lat}, ${long}&z=15&output=embed`;
     
     latitude.innerHTML = `Lat : ${lat}`;
 
