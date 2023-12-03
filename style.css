@@ -50,8 +50,7 @@ body {
 }
 
 #fetchBtn:hover {
-    /* transform: translateY(-2px); */
-    border: 2px solid #fff;
+    outline: 1px solid #fff;
     color: var(--white-color);
     background-color: var(--btn-bg-color);
 }
