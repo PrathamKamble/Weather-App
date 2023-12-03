@@ -1,3 +1,5 @@
+console.log(this);
+
 const latitude = document.querySelector('.lat');
 const longitude = document.querySelector('.long');
 
@@ -17,14 +19,15 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric";
 
 async function getLocation(position) {
     await checkWeather(position.coords.latitude, position.coords.longitude);
+    document.getElementById('landing-page').style.display = 'none';
 };  
 function failed() {
-    console.log('failed to get location');
+    alert('failed to get location');
+    document.getElementById('data-page').style.display = 'none';
 };
 
 fetchBtn.addEventListener('click', async () => {
     navigator.geolocation.getCurrentPosition(getLocation, failed);
-    document.getElementById('landing-page').style.display = 'none';
     document.getElementById('data-page').style.display = 'block';
 });
 

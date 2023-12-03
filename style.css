@@ -3,7 +3,8 @@
 :root {
     --main-color: #360369;
     --white-color: #ffffff;
-    --btn-bg-color: #270846;;
+    --btn-bg-color: #270846;
+    ;
     --purple-color: #360369;
 }
 
@@ -27,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .box {
     text-align: center;
 }
@@ -43,7 +45,15 @@ body {
     font-weight: bold;
     border: none;
     outline: none;
+    cursor: pointer;
     transition: all 0.2s ease;
+}
+
+#fetchBtn:hover {
+    /* transform: translateY(-2px); */
+    border: 2px solid #fff;
+    color: var(--white-color);
+    background-color: var(--btn-bg-color);
 }
 
 .box > #fetchBtn:active {
